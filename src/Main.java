@@ -74,8 +74,8 @@ public class Main {
         System.out.println("\nTask6");
         int answer = (5 * 80 + 2 * 105 + 200 + 70 * 4);
         double answerKilo = answer*0.001;
-        double answerKilo = answer/1000;// почему вывод 1?
-        System.out.printf ("В граммах %d В килограммах var1 %f\n, var2 \n",answer,answerKilo);
+        double answerKilo2 = answer/1000;// почему вывод 1?
+        System.out.printf ("В граммах %d В килограммах var1 %f, var2 %f \n",answer,answerKilo,answerKilo2);
     }
 
     public  static void task7 (){
