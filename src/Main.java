@@ -42,7 +42,7 @@ public class Main {
 
     public static void task3(){
         System.out.println("\nTask3");
-        double answer =480/(23+27+30);//не л будет ли число целым, и решил что точность важна
+        double answer = (double)480/(23+27+30);//не л будет ли число целым, и решил что точность важна
         System.out.printf("На каждого ученика рассчитано %f листов бумаги\n", answer);
     }
 
@@ -73,8 +73,9 @@ public class Main {
     public  static void task6 (){
         System.out.println("\nTask6");
         int answer = (5 * 80 + 2 * 105 + 200 + 70 * 4);
-        double answerKilo = answer*0.001;// просто интересно - почему он автоматически округлял результат при делении на 1000?
-        System.out.printf ("В граммах %d В килограммах %f\n",answer,answerKilo);
+        double answerKilo = answer*0.001;
+        double answerKilo = answer/1000;// почему вывод 1?
+        System.out.printf ("В граммах %d В килограммах var1 %f\n, var2 \n",answer,answerKilo);
     }
 
     public  static void task7 (){
